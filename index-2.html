@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mark Beauchamp - Electrical & Power Systems Portfolio</title>
+    <style>
+        :root {
+            --navy: #002147;
+            --amber: #CFB991;
+            --light-gray: #f4f4f4;
+            --text-dark: #333333;
+        }
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        header {
+            border-bottom: 4px solid var(--amber);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        h1 {
+            color: var(--navy);
+            font-size: 2.5em;
+            margin: 0 0 10px 0;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: var(--navy);
+            margin-bottom: 10px;
+        }
+        .contact-info {
+            font-size: 0.9em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .contact-info a {
+            color: var(--navy);
+            text-decoration: none;
+        }
+        .summary {
+            font-size: 1em;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 40px;
+            background-color: var(--light-gray);
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+            font-size: 0.9em;
+        }
+        th {
+            background-color: var(--navy);
+            color: white;
+        }
+        .project {
+            margin-bottom: 50px;
+        }
+        .project-title {
+            color: var(--navy);
+            font-size: 1.5em;
+            border-bottom: 2px solid var(--amber);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .project-meta {
+            font-weight: bold;
+            font-size: 0.95em;
+            margin-bottom: 15px;
+            color: #555;
+        }
+        .project-content {
+            margin-bottom: 20px;
+        }
+        .project-content strong {
+            color: var(--navy);
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+            background-color: var(--light-gray);
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+        }
+        .caption {
+            font-size: 0.85em;
+            color: #666;
+            margin-top: 10px;
+            font-style: italic;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Mark Beauchamp</h1>
+        <div class="subtitle">B.S. in Electrical Engineering (Electric Power Concentration) · Purdue University (Expected May 2028)</div>
+        <div class="contact-info">
+            Plymouth, MN / West Lafayette, IN | 612-812-9515 | <a href="mailto:mbeauch6@gmail.com">mbeauch6@gmail.com</a> | <a href="https://linkedin.com/in/mark-beauchamp6">linkedin.com/in/mark-beauchamp6</a>
+        </div>
+        <div class="summary">
+            Electrical Engineering undergraduate focused on electric power conversion, autonomous vehicle control systems, and automated hardware validation. Experienced taking hardware from circuit simulation and systems architecture through physical integration, benchtop oscilloscope verification, and live field testing across multi-vehicle unmanned aerial systems, DC-DC switching regulators, and distributed machine-vision camera networks.
+        </div>
+    </header>
+
+    <section id="skills">
+        <table>
+            <thead>
+                <tr>
+                    <th>Engineering Domain</th>
+                    <th>Tools, Languages & Platforms</th>
+                    <th>Applied Hardware & Systems Evidence</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Power & Analog Circuits</strong></td>
+                    <td>LTspice, KiCad, Oscilloscope Bring-Up, MATLAB/Simulink, Revit</td>
+                    <td>5V-to-2.5V DC-DC buck converter design & bench verification; discrete 555-timer ultrasonic PWM driver</td>
+                </tr>
+                <tr>
+                    <td><strong>Flight Controls & Avionics</strong></td>
+                    <td>ArduPilot, Mission Planner, sUAS Systems Integration</td>
+                    <td>Lead Systems Engineer on Project RAPTOR mothership & deployable sUAS architecture</td>
+                </tr>
+                <tr>
+                    <td><strong>Embedded & Test Software</strong></td>
+                    <td>Python, C/C++, SystemVerilog, SQL (MySQL), Java, GitHub</td>
+                    <td>Python control & remote deployment across 16 networked mvBlueCOUGAR-XD stadium cameras</td>
+                </tr>
+                <tr>
+                    <td><strong>Core EE Foundation</strong></td>
+                    <td>Power Systems, Microprocessor Systems, Signals & Systems, Digital System Design, Electromagnetism</td>
+                    <td>Hands-on mechanical/electrical race optimization as Crew Chief & VP for Cary Racing (Purdue Grand Prix)</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="projects">
+        <article class="project">
+            <div class="project-title">01 Project RAPTOR — Mothership & Deployable sUAS Control System</div>
+            <div class="project-meta">Lead Systems Engineer | Purdue National Security & Defense Society (VIP-Funded) | May 2026 – Present</div>
+            <div class="project-content">
+                <p><strong>System Objective:</strong> Leading control systems architecture, avionics integration, and flight testing for a Vertically Integrated Projects (VIP)-funded mothership unmanned aerial system engineered to carry and deploy one-way attack small unmanned aircraft systems (sUAS) beyond their standalone battery range.</p>
+                <p><strong>Avionics & Power Distribution Integration:</strong> Own end-to-end airframe electronics integration, wiring harness layout, flight controller configuration, and actuator interfacing across Pixhawk 6X, ESCs, telemetry radios, and payload release servos on a 6S LiPo primary bus.</p>
+                <p><strong>Control Loop Optimization & Mass-Shift Handling:</strong> Configure and tune ArduPilot control parameters in Mission Planner to maintain attitude stability across dual flight regimes—heavily loaded carrier cruise prior to separation and rapid center-of-gravity/mass transition at mid-air sUAS deployment.</p>
+                <p><strong>Flight Test & Pre-Flight Verification:</strong> Lead ground-station operations, pre-flight sensor/failsafe checklists, and post-flight log analysis to validate airframe reliability across iterative test sorties.</p>
+            </div>
+            <div class="image-container">
+                <img src="Screenshot 2026-11-05 at 12.04.46 PM.jpg" alt="Project RAPTOR Architecture Diagram">
+                <div class="caption">Figure 1A. Project RAPTOR mothership sUAS airframe and avionics architecture.</div>
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-title">02 Step-Down DC-DC Buck Converter (5.0 V to 2.5 V)</div>
+            <div class="project-meta">Power Electronics Design, Simulation & Bench Validation | Tools: LTspice, Breadboard, Oscilloscope | April 2026</div>
+            <div class="project-content">
+                <p><strong>Design Problem:</strong> Designed, simulated, and physically validated a switched-mode step-down DC-DC buck regulator stepping a 5.0 V DC rail down to a regulated 2.5 V output at a 50% switching duty cycle (Vout = D · Vin = 0.50 × 5.0 V = 2.5 V), verifying transient startup, inductor current continuity, and output voltage ripple on hardware.</p>
+                <p><strong>LTspice Modeling & Component Sizing:</strong> Selected power switch, catch diode, filter inductance, and output capacitance in LTspice to operate in continuous conduction mode (CCM) while bounding peak-to-peak output ripple across the target load resistance.</p>
+                <p><strong>Physical Bring-Up & Oscilloscope Verification:</strong> Constructed the converter on a breadboard, minimized high-di/dt switching loop length where possible, and probed switch-node waveforms and DC output ripple on a digital storage oscilloscope to confirm 2.5 V step-down regulation at 50% duty cycle.</p>
+                <p><strong>Application:</strong> Used the skills and knowledge gained from this directly on Project RAPTOR by configuring uBECs to step down voltage from the Tarot X6 power delivery board to multiple servo motors across the drone for our drone release mechanism and landing gears.</p>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Design Target / LTspice Simulation</th>
+                        <th>Benchtop Oscilloscope Measurement</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Input Voltage (Vin) / Duty Cycle (D)</strong></td>
+                        <td>5.0 V DC | 50.0% Duty Cycle</td>
+                        <td>5.0 V DC | 50% Duty Cycle Confirmed</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Output Voltage (Vout)</strong></td>
+                        <td>2.50 V DC</td>
+                        <td>2.5 V DC Confirmed (Exact: 2.49 V)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Switching Frequency (fsw) & Filter (L, C)</strong></td>
+                        <td>fsw: 100 kHz, L = 1 mH, C = 10 μF</td>
+                        <td>Measured fsw: 100 kHz</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Output Voltage Ripple (ΔVout,pp)</strong></td>
+                        <td>Simulated: 0 mVpp @ 5 mA load</td>
+                        <td>Measured: 272.32 mVpp on AC-coupled Ch2</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="grid-2">
+                <div class="image-container">
+                    <img src="LTspice buck converter.png" alt="LTspice Schematic and Simulation">
+                    <div class="caption">Figure 2A. LTspice buck converter schematic and steady-state step-down waveform simulation.</div>
+                </div>
+                <div class="image-container">
+                    <img src="10.1.4b.png" alt="Oscilloscope Measurement">
+                    <div class="caption">Figure 2B. Benchtop oscilloscope validation confirming 5.0 V to 2.5 V conversion at 50% duty cycle.</div>
+                </div>
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-title">03 Distributed Machine-Vision Camera Fleet & Test Software</div>
+            <div class="project-meta">Electrical Engineering Intern | Minnesota Twins (Minneapolis, MN) | Jan. 2024 – May 2024</div>
+            <div class="project-content">
+                <p><strong>Production Hardware Context:</strong> Engineered Python acquisition/testing software and database infrastructure supporting high-speed industrial machine-vision cameras (MATRIX VISION mvBlueCOUGAR-XD GigE Vision sensors) deployed across stadium facilities to capture biomechanics data for hitter and pitcher analysis.</p>
+                <p><strong>Hardware-in-the-Loop Camera Software:</strong> Developed and validated Python control and testing scripts interfacing directly with mvBlueCOUGAR-XD camera hardware to verify frame acquisition, trigger synchronization, exposure settings, and link stability prior to live baseball operations.</p>
+                <p><strong>16-Site Networked Fleet Deployment:</strong> Queried and maintained a centralized MySQL inventory and configuration database tracking networked stadium cameras, enabling automated remote software deployment, diagnostics, and regression testing across 16 distributed locations without manual physical intervention.</p>
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-title">04 MLB Live Scoreboard</div>
+            <div class="project-meta">Electronics Design, Python Programming | Tools: Python, Raspberry Pi, LED board | March 2025</div>
+            <div class="project-content">
+                <p><strong>Design:</strong> Created a Python API to get live score updates from the official MLB website to display on a 32×64 LED matrix board.</p>
+                <ul>
+                    <li>Designed the graphics on the scoreboard as it revolves through every game that is currently being played.</li>
+                    <li>Options to set a favorite team that only displays that scoreboard when they are playing.</li>
+                    <li>Revolves through recent news across the MLB when no games are being played at the time.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="View recent photos.jpeg" alt="MLB Scoreboard">
+                <div class="caption">Figure 4A: Scoreboard</div>
+            </div>
+        </article>
+
+        <article class="project">
+            <div class="project-title">05 Motorsport Systems Leadership</div>
+            <div class="project-meta">Vice President & Crew Chief — Cary Racing, Purdue Grand Prix (Sept. 2024 – Present)</div>
+            <div class="project-content">
+                <p>Lead a 7+ member engineering and pit crew to build, instrument, test, and tune a competitive sprint go-kart for the Purdue Grand Prix, earning consecutive <strong>Top-10 finishes</strong> across the past two race seasons.</p>
+                <ul>
+                    <li>Direct trackside mechanical/electrical troubleshooting, pre-race reliability inspections, and rapid setup adjustments under strict qualifying and race-day time windows.</li>
+                    <li>As Vice-President, I help lead weekly general meetings to organize the team, work on the kart, and teach new members about the mechanics and construction of a go-kart.</li>
+                </ul>
+            </div>
+            <div class="image-container">
+                <img src="IMG_3912.jpeg" alt="Purdue Grand Prix Go-Kart">
+                <div class="caption">Figure 5A: Go-kart on Race Day</div>
+            </div>
+        </article>
+    </section>
+</div>
+
+</body>
+</html>
